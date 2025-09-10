@@ -16,6 +16,23 @@
 
         /* Add CSS code here */ 
 
+        /* .square -> class selector, 
+        if both id selector and class selector applies, id rule wins */
+       
+        /* #circle.square {
+            border-radius: 0%;
+        } */
+
+        #square{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: goldenrod;
+            text-align: center;
+            padding-top: 20px;
+            border-radius: 0%;
+        }
+
     </style>
 </head>
 <body>
@@ -25,7 +42,32 @@
         </div>
         
         <script>
-           // add code here
+            // add code here
+            // function mOver(shape){
+            //     // add square class -> id="circle" class="square"
+            //     shape.classList.add("square");
+              
+
+            // }
+
+            // function mOut(shape){
+
+            //     shape.classList.remove("square");
+                
+
+            // }
+
+            function mOver(shape){
+                // add square class -> id="circle" class="square"
+                shape.id = "square";
+
+            }
+
+            function mOut(shape){
+
+                shape.id = "circle";                
+
+            }
         </script>
                 
 </body>
